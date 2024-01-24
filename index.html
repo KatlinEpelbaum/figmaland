@@ -6,10 +6,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section class="bg-cover" style="background-image: url('imgs/page1.png'); height: 1000px;">
+<body class="w-screen">
+    <section class="bg-cover w-screen bg-center" style="background-image: url('imgs/page1.png'); height: 1000px;">
         <div class="flex ml-36">
-            <div class="flex text-white gap-16 mt-8">
+            <div class="flex text-white gap-10 mt-8">
                 <p class="text-lg">Home</p>
                 <p class="text-lg">Product</p>
                 <p class="text-lg">Pricing</p>
@@ -98,13 +98,13 @@
             <button class="text-white bg-blue-500 rounded-full mx-auto py-4 px-14 mt-20 text-xl font-bold">More Testimonials</button>
         </div>
     </section>
-    <section class="bg-slate-800 text-white pb-20">
+    <section class="bg-slate-800 text-white pb-20 space-x-1">
         <div class="text-center pb-4">
             <h1 class="text-6xl mb-8 pt-20">Pricing</h1>
             <p class="text-3xl">Most calendars are designed for teams.<br> Slate is designed for freelancers</p>
         </div>
-        <div class="flex flex-row justify-around mt-16 mx-72">
-            <div class="bg-white text-black rounded-xl px-16 py-9 mt-14 mb-14">
+        <div class="flex flex-row justify-around  mt-16 mx-72 p">
+            <div class="bg-white text-black rounded-xl px-16 py-9 mt-14 mb-14 ">
                 <div class="text-center">
                     <h1 class="text-2xl font-bold">FREE</h1>
                     <p class="text-lg">Organize across all <br>app by hand</p>
@@ -163,14 +163,14 @@
             <h1 class="text-5xl">Contact Us</h1>
             <p class="mt-6 text-3xl text-gray-700">Most calendars are designed for teams.<br> Slate is designed for freelancers</p>
         </div>
-        <div class="container mx-auto p-8 flex">
-            <div class="flex flex-row">
+        <div class="container mx-auto flex">
+            <div class="flex flex-row w-screen">
                 <div class="flex justify-between mt-32">
-                    <div class="flex flex-col text-center ml-24 shadow-xl p-12 rounded-3xl border ">
+                    <div class="flex flex-col text-center ml-24 shadow-xl p-8 rounded-3xl border ">
                         <h1 class="text-2xl pt-2 pb-1 font-bold">Contact Us</h1>
-                        <input class="bg-slate-100 border rounded-3xl py-3 pl-5 pr-44 my-9 " type="text" placeholder="Your Name">
-                        <input class="bg-slate-100 border rounded-3xl py-3 pl-5 pr-44 mb-9" type="text" placeholder="Your Email">
-                        <input class="bg-slate-100  border pt-3 pb-44 pl-5 pr-44 " type="text" placeholder="Message">
+                        <input class="bg-slate-100 border rounded-3xl py-3 pl-4 pr-28 my-9 " type="text" placeholder="Your Name">
+                        <input class="bg-slate-100 border rounded-3xl py-3 pl-4 pr-28 mb-9" type="text" placeholder="Your Email">
+                        <input class="bg-slate-100  border pt-3 pb-44 pl-4 pr-32 " type="text" placeholder="Your Message">
                         <button class="text-white bg-blue-500 text-2xl text-center font-light rounded-full mx-auto py-3 px-14 mr-64 mt-14">Send</button>
                     </div>
                     <div class="flex-col flex">
@@ -184,7 +184,7 @@
                             <p class="text-center text-gray-500">(843) 555-0130</p>
                             <p class="text-center text-gray-500">willie.jennings@example.com</p>
                         </div>
-                        <img class="h-72 pr-72 m-auto ml-60 scale-110" src="imgs/map.png" alt="">
+                        <img class="h-28 pr-48 m-auto ml-60 " src="imgs/map.png" alt="">
                         <img class="h-9 w-36 ml-28 mb-12" src="imgs/Socials2.png" alt="">
                     </div>
                 </div>  
