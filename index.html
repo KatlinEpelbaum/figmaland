@@ -6,18 +6,18 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section class="bg-cover" style="background-image: url('imgs/page1.png'); height: 1000px;">
+<body class="w-screen">
+    <section id="home"  class="bg-cover w-screen bg-center" style="background-image: url('imgs/page1.png'); height: 1000px;">
         <div class="flex ml-36">
-            <div class="flex text-white gap-16 mt-8">
-                <p class="text-lg">Home</p>
-                <p class="text-lg">Product</p>
-                <p class="text-lg">Pricing</p>
-                <p class="text-lg">About</p>
-                <p class="text-lg">Contact</p>
+            <div class="flex text-white gap-10 mt-8">
+                <button class="bg-transparent text-lg hover:bg-white hover:text-black text-white py-2 px-4 rounded transition duration-300 border-none" onclick="scrollToSection('home')">Home</button>
+                <button class="bg-transparent text-lg hover:bg-white hover:text-black text-white py-2 px-4 rounded transition duration-300 border-none" onclick="scrollToSection('product')">Product</button>
+                <button class="bg-transparent text-lg hover:bg-white hover:text-black text-white py-2 px-4 rounded transition duration-300 border-none" onclick="scrollToSection('pricing')">Pricing</button>
+                <button class="bg-transparent text-lg hover:bg-white hover:text-black text-white py-2 px-4 rounded transition duration-300 border-none" onclick="scrollToSection('about')">About</button>
+                <button class="bg-transparent text-lg hover:bg-white hover:text-black text-white py-2 px-4 rounded transition duration-300 border-none" onclick="scrollToSection('contact')">Contact</button>
             </div>
-            <img class="h-16 pl-20 mt-2 pr-8" src="imgs/figmaland.png" alt="">
-            <img class="pl-96 h-12 mt-5" src="imgs/Socials.png" alt="">
+            <img class="h-16 pl-20 mt-6 pr-8" src="imgs/figmaland.png" alt="">
+            <img class="pl-96 h-12 mt-7 " src="imgs/Socials.png" alt="">
         </div>
         <div class="flex  flex-col justify-center text-center  mt-44">
             <h1 class="text-white font-bold text-7xl">The best products <br>start with Figma</h1>
@@ -25,7 +25,7 @@
             <button class="text-white bg-blue-500 rounded-3xl mx-auto py-3 px-16 mt-24  text-lg -tracking-wider">Try For Free</button>
         </div>
     </section>
-    <section>
+    <section id="product">
         <div class="flex text-center justify-center m-28 flex-col">
             <h1 class="text-6xl tracking-wide">Features</h1>
             <p class="text-slate-500 text-3xl mt-8 tracking-wide">Most calendars are designed for teams. <br>Slate is designed for freelancers</p>
@@ -49,7 +49,7 @@
         </div>
         <img class="mx-auto mt-16" src="imgs/video.png" alt="">
     </section>
-    <section class="flex flex-row justify-center mt-48 gap-28">
+    <section id="about" class="flex flex-row justify-center mt-48 gap-28">
         <div>
             <h1 class="text-6xl pt-16">Fastest way to<br> organize</h1>
             <p class="text-slate-700 pt-4 text-3xl mt-5">Most calendars are designed for teams.<br> Slate is designed for freelancers</p>
@@ -98,13 +98,13 @@
             <button class="text-white bg-blue-500 rounded-full mx-auto py-4 px-14 mt-20 text-xl font-bold">More Testimonials</button>
         </div>
     </section>
-    <section class="bg-slate-800 text-white pb-20">
+    <section class="bg-slate-800 text-white pb-20 space-x-1" id="pricing">
         <div class="text-center pb-4">
             <h1 class="text-6xl mb-8 pt-20">Pricing</h1>
             <p class="text-3xl">Most calendars are designed for teams.<br> Slate is designed for freelancers</p>
         </div>
-        <div class="flex flex-row justify-around mt-16 mx-72">
-            <div class="bg-white text-black rounded-xl px-16 py-9 mt-14 mb-14">
+        <div class="flex flex-row justify-around  mt-16 mx-72 p">
+            <div class="bg-white text-black rounded-xl px-16 py-9 mt-14 mb-14 ">
                 <div class="text-center">
                     <h1 class="text-2xl font-bold">FREE</h1>
                     <p class="text-lg">Organize across all <br>app by hand</p>
@@ -158,34 +158,36 @@
                     <button class="text-white bg-blue-500 rounded-full mx-auto py-4 px-20 text-xl tracking-wide">Order Now</button>
                 </div>
     </section>
-    <section class="bg-white text-black mt-40">
+    <section id="contact" class="bg-white text-black mt-40">
         <div class="text-center flex flex-col justify-center">
             <h1 class="text-5xl">Contact Us</h1>
             <p class="mt-6 text-3xl text-gray-700">Most calendars are designed for teams.<br> Slate is designed for freelancers</p>
         </div>
-        <div class="container mx-auto p-8 flex">
-            <div class="flex flex-row">
+        <div class="container mx-auto flex">
+            <div class="flex flex-row w-screen">
                 <div class="flex justify-between mt-32">
-                    <div class="flex flex-col text-center ml-24 shadow-xl p-12 rounded-3xl border ">
+                    <div class="flex flex-col text-center ml-24 shadow-xl p-8 rounded-3xl border ">
                         <h1 class="text-2xl pt-2 pb-1 font-bold">Contact Us</h1>
-                        <input class="bg-slate-100 border rounded-3xl py-3 pl-5 pr-44 my-9 " type="text" placeholder="Your Name">
-                        <input class="bg-slate-100 border rounded-3xl py-3 pl-5 pr-44 mb-9" type="text" placeholder="Your Email">
-                        <input class="bg-slate-100  border pt-3 pb-44 pl-5 pr-44 " type="text" placeholder="Message">
+                        <input class="bg-slate-100 border rounded-3xl py-3 pl-4 pr-28 my-9 " type="text" placeholder="Your Name">
+                        <input class="bg-slate-100 border rounded-3xl py-3 pl-4 pr-28 mb-9" type="text" placeholder="Your Email">
+                        <input class="bg-slate-100  border pt-3 pb-44 pl-4 pr-32 " type="text" placeholder="Your Message">
                         <button class="text-white bg-blue-500 text-2xl text-center font-light rounded-full mx-auto py-3 px-14 mr-64 mt-14">Send</button>
                     </div>
-                    <div class="flex-col flex">
+                    <div class="flex-col flex pl-12">
                         <div class="flex flex-row justify-around mt-16 ml-12 mb-5">
                             <img class="h-8 w-6.5 " src="imgs/Vector.png" alt="">
                             <img class="h-8 w-5.5 ml-7" src="imgs/phone.png" alt="">
                             <img class="h-6 pr-6" src="imgs/Vector2.png" alt="">
                         </div>
-                        <div class="flex flex-row justify-around">
-                            <p class="text-center text-gray-500">6386 Spring St undefined Anchorage,<br> Georgia 12473 United States</p>
-                            <p class="text-center text-gray-500">(843) 555-0130</p>
+                        <div class="flex flex-row justify-around pb-10">
+                            <p class="text-center text-gray-500 pr-6">6386 Spring St undefined Anchorage,<br> Georgia 12473 United States</p>
+                            <p class="text-center text-gray-500 pr-6">(843) 555-0130</p>
                             <p class="text-center text-gray-500">willie.jennings@example.com</p>
                         </div>
-                        <img class="h-72 pr-72 m-auto ml-60 scale-110" src="imgs/map.png" alt="">
-                        <img class="h-9 w-36 ml-28 mb-12" src="imgs/Socials2.png" alt="">
+                        <div>
+                            <iframe class="pl-20 pb-20" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4556.074719124587!2d164.65703169899058!3d-20.937482178483478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU2JzE2LjAiUyAxNjTCsDM5JzMwLjIiRQ!5e1!3m2!1sen!2see!4v1706113363139!5m2!1sen!2see" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <img class="h-9 w-36 ml-34 mb-20" src="imgs/Socials2.png" alt="">
                     </div>
                 </div>  
             </div>
@@ -226,6 +228,14 @@
             </div>
         </div>
     </section>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            const sectionElement = document.getElementById(sectionId);
+            if (sectionElement) {
+                sectionElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        </script>
 </body>
 </html>
